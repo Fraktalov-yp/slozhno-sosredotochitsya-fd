@@ -63,6 +63,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
+  border-color: transparent;
   border-bottom-color: var(--decor-color);
 }
 
@@ -358,12 +359,11 @@
   }
 
   .content__section_type_factors .content__section-title {
-    grid-column: 1;
-    inline-size: auto;
+    grid-column: 1 / -1;
+    inline-size: calc((100% - 40px) / 3);
   }
 
   .content__section_type_factors .content__card {
-    grid-row: 2;
     margin-block-start: 0;
   }
 
